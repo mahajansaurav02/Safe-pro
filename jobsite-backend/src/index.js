@@ -1,4 +1,5 @@
 const express = require("express");
+// import path from 'path'
 const nodemailer = require("nodemailer");
 const multer = require("multer");
 const cors = require("cors");
@@ -65,10 +66,11 @@ app.post("/api/submitForm", upload.single("resume"), (req, res) => {
   });
 });
 
-app.use(express.static(path.join(__dirname,'/my-app/build')))
-app.get('*',(req,res)=>
-res.sendFile(path.join(__dirname,'/my-app/build/index.html'))
-)
+// const __dirname=path.resolve()
+// app.use(express.static(path.join(__dirname,'/my-app/build')))
+// app.get('*',(req,res)=>
+// res.sendFile(path.join(__dirname,'/my-app/build/index.html'))
+// )
 //=================================================================================
 
 const PORT = 5000;
