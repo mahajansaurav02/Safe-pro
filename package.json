@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build":"cd jobsite-backend && cd ../my-app && npm install && npm run build",
-    "start":"node/src/index.js",
+    "start":"node/jobsite-backend/src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
